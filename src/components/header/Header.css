@@ -1,0 +1,87 @@
+.header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5px 0;
+    top: 0;
+    position:sticky;
+     border-bottom: 1px solid lightgrey;
+}
+
+/* Left-Header */
+
+.left__header{
+    display: flex;
+}
+
+.left__header > img{
+    height: 35px;
+    object-fit: contain;
+    
+}
+
+.header__search{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: #EEF3F8;
+    margin-left: 10px;
+    border-radius: 2px;
+    height:35px;
+    color: #5F6163;
+}
+
+.header__search >input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    width:281px;
+    color: black;
+    text-transform:capitalize;
+    color: #5F6163;
+    font-size:0.9rem;
+}
+/* Right-Header */
+
+.right__header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    color: #5E5E5E; 
+}
+
+.header__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    cursor: pointer;
+    
+}
+
+.link__icon{
+    height : 25px !important;
+    width: 25px !important;
+    object-fit: contain;
+}
+
+.header__icon > img{
+    border-radius: 50%;
+}
+
+.header__icon > h3{
+    font-weight:400; 
+    transition: all ease 0.5;
+}
+
+.header__icon:hover{
+    color: black;
+}
+
+

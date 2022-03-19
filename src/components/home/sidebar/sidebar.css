@@ -1,0 +1,125 @@
+
+
+.sidebar{
+    display: flex;
+    background-color: #F3F2EF;
+    text-transform:capitalize;
+    height:fit-content;
+}
+
+.sidebar h4 , p {
+    font-size: 0.75rem;
+}
+
+h4{
+    color: #191919;
+}
+
+p{
+    color: #5E5E5E;
+}
+
+.upper__sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex: 0.2;
+    border-radius: 10px;
+    text-transform: capitalize;
+    
+}
+
+.upper__sidebar > img{
+    height: 58px;
+    object-fit: cover;
+}
+
+.sidebar__personalInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    overflow: visible;
+    color: #191919;
+    border-bottom: 1px solid #F3F2EF;
+    margin-bottom: 10px;
+
+}
+
+.my__info{
+    padding: 20px;
+    text-align: center;
+    line-height:2;
+}
+
+.my__info > h3 {
+    cursor: pointer;
+    color: #19192F;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.my__info > h3:hover{
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
+
+.sidebar__avatar{
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: -30px;
+}
+
+
+.sidebar__network{
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.sidebar__network > p{
+    font-weight: bold;
+    color: #6B8295;
+}
+
+.sidebar__info{
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #F3F2EF;
+}
+
+.sidebar__info > div{
+    display : flex;
+    align-items: center;
+}
+
+span{
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.sidebar__items{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__items > h4{
+    margin-left : 2px;
+}
+
+.sidebar__icon{
+    color:  #5E5E5E;
+}
+
+
+.sidebar__network:hover,.sidebar__info:hover{
+    background-color:#EBEBEB;
+}
+
+
