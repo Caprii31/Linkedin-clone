@@ -2,9 +2,12 @@
 
 .posts{
     display: flex;
+    flex-direction: column;
     flex: 0.5;
     margin: 0 20px;
 }
+
+/******* post input *********/
 
 .post__input{
     display: flex;
@@ -15,6 +18,13 @@
     height:fit-content;
     background-color:white; 
     border-radius:10px;
+    border: 1px solid lightgrey;
+    
+
+}
+
+.post__input p{
+    color:#6B8295;
 }
 
 .upper__postInput{
@@ -63,7 +73,7 @@
     margin-top:10px;   
 }
 
-.post__option{
+.post__type{
     display: flex;
     align-items:center;
     justify-content:center;
@@ -72,16 +82,99 @@
     transition: ease 0.2s all;
 }
 
-.post__option:hover{
+.post__type:hover{
     background-color: #EBEBEB;
 }
 
-.post__option > p {
+.post__type > p {
     margin-left: 10px;
 }
 
-.post__option > p{
+.post__type > p{
     font-size:0.85rem;
     font-weight: bold;
 }
+
+/******** sort line *******/
+
+
+.sort__posts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.sort__posts > hr{
+    width:80%;
+    background-color: lightgray;
+}
+
+.sort__posts > p{
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #9A949D;
+}
+
+.sort__posts > p > span {
+    font-weight: bold;
+    color: #5E5E5E;
+}  
+
+
+/******** single post *******/
+
+.singlePost{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius:10px;
+}
+
+.post__info{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    
+}
+
+.left__post{
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.author__info p{
+    font-size: 0.8rem;
+    color: #6B8295;
+}
+
+.left__post > .author__info{
+    margin-left:10px;
+}
+
+.left__post > .author__info > h4 {
+    font-size:0.9rem;
+}
+
+.extra__info{
+    display: flex;
+    align-items: center;
+}
+
+.extra__info > p{
+    margin-right: 5px;
+}
+
+.main__post {
+    font-size: 1rem;
+    color: #191919;
+}
+
+
+
 

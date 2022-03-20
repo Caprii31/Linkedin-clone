@@ -5,7 +5,8 @@ import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import FeedIcon from '@mui/icons-material/Feed';
 import PostOption from './PostOption';
-
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import SinglePost from './SinglePost';
 
 function Posts() {
   return (
@@ -24,9 +25,18 @@ function Posts() {
                 <PostOption title='event' Icon ={EventNoteIcon} color='#E7A33E' />     
                 <PostOption title='write article' Icon ={FeedIcon} color='#F8A8AA' />     
             </div>
+
+            
         </div>
+        <div className="sort__posts">
+            <hr />
+            <p>sort by : <span>top</span></p>
+            <ArrowDropDownIcon />
+                
+        </div>
+        <SinglePost />
     </div>
   )
-}
+}   
 
 export default Posts

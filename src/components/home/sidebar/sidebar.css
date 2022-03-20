@@ -9,17 +9,18 @@
     flex: 0.2
 }
 
-.sidebar h4 , p {
+.sidebar h4 , .sidebar p {
     font-size: 0.75rem;
+}
+
+.sidebar p{
+    color: #6B8295;
 }
 
 h4{
     color: #191919;
 }
 
-p{
-    color: #5E5E5E;
-}
 
 .upper__sidebar{
     display: flex;
@@ -82,7 +83,6 @@ p{
 
 .sidebar__network > p{
     font-weight: bold;
-    color: #6B8295;
 }
 
 .sidebar__info{
@@ -97,7 +97,7 @@ p{
     align-items: center;
 }
 
-span{
+.sidebar__info > div > span{
     width: 10px;
     height: 10px;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
