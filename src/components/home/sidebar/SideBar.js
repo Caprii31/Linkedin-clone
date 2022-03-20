@@ -2,6 +2,7 @@ import React from 'react'
 import image from '../../../utils/sidebar-cover.jpg'
 import myImage from '../../../utils/my-img.jpg'
 import BookmarkIcon from '@mui/icons-material/Bookmark';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 
 function SideBar() {
@@ -34,6 +35,19 @@ function SideBar() {
         </div>
 
         <div className="down__sidebar">
+        <p>recent</p>
+          <div className="recent__info">
+            <PeopleAltIcon />
+            <h4>this my recent</h4>
+          </div>
+          <div className="recent__info">
+            <PeopleAltIcon />
+            <h4>this my recent</h4>
+          </div>
+          <div className="recent__info">
+            <PeopleAltIcon />
+            <h4>this my recent</h4>
+          </div>
           
         </div>
     </div>

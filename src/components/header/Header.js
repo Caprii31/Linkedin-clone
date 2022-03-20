@@ -8,6 +8,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import SmsIcon from '@mui/icons-material/Sms';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Avatar from '../../utils/my-img.jpg'
+import AppsIcon from '@mui/icons-material/Apps';
 
 
 
@@ -29,6 +30,8 @@ function Header() {
         <LinkIcon title="messaging" Icon={SmsIcon}/>    
         <LinkIcon title="notification" Icon={NotificationsIcon  }/> 
         <LinkIcon title="me" Avatar={Avatar} />      
+        <LinkIcon title="work" Icon={AppsIcon} />     
+        
       </div>
     </div>
   )

@@ -1,6 +1,10 @@
 @import url('./sidebar/sidebar.css');
+@import url('./posts/posts.css');
 
 .home{
+    display: flex;
+    flex-direction: row;
     padding:20px 195px;
     background-color:#F3F2EF;
 }
+

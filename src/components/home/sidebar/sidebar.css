@@ -2,9 +2,11 @@
 
 .sidebar{
     display: flex;
+    flex-direction: column;
     background-color: #F3F2EF;
     text-transform:capitalize;
     height:fit-content;
+    flex: 0.2
 }
 
 .sidebar h4 , p {
@@ -23,9 +25,9 @@ p{
     display: flex;
     flex-direction: column;
     background-color: white;
-    flex: 0.2;
     border-radius: 10px;
     text-transform: capitalize;
+    border: 1px solid lightgray;
     
 }
 
@@ -101,7 +103,7 @@ span{
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     border-radius: 2px;
-    margin-right: 5px;
+    margin: 0 5px;
 }
 
 .sidebar__items{
@@ -123,3 +125,32 @@ span{
 }
 
 
+.down__sidebar{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+    text-transform: capitalize;
+    line-height:2.5;
+}
+
+
+
+
+.recent__info{
+    display: flex;
+    align-items: center;    
+    line-height:3;
+    color: #5E5E5E;
+    cursor: pointer;
+}
+.recent__info:hover{
+    background-color:#EBEBEB;
+}
+
+.recent__info > h4{  
+    margin-left: 5px;
+}
