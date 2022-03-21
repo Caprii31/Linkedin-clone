@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     padding:10px;
-    text-transform: capitalize;
     width: 100%;
     height:fit-content;
     background-color:white; 
@@ -88,11 +87,9 @@
 
 .post__type > p {
     margin-left: 10px;
-}
-
-.post__type > p{
     font-size:0.85rem;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 /******** sort line *******/
@@ -130,9 +127,10 @@
 .singlePost{
     display: flex;
     flex-direction: column;
-    padding: 15px 20px;
+    padding: 15px;
     background-color: white;
     border-radius:10px;
+    border: 1px solid lightgrey;
 }
 
 .post__info{
@@ -173,7 +171,17 @@
 .main__post {
     font-size: 1rem;
     color: #191919;
+    padding:20px 0;
+    border-bottom: 1px solid lightgrey;
 }
+
+.social__options{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+
 
 
 
