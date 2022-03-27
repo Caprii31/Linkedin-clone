@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import image from '../../utils/LinkedIn_logo_initials.png'
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
@@ -13,13 +13,20 @@ import AppsIcon from '@mui/icons-material/Apps';
 
 
 function Header() {
+  const [ search , setSearch  ] = useState('') 
+
+  function handleSearch(e) {
+    e.preventDefault();
+    setSearch(e.target.value)
+  }
+  
   return (
     <div className="header">
       <div className="left__header">
         <img src={image} alt="" />
         <div className="header__search">
           <SearchIcon fontSize="small" />
-          <input type="text" value='search' />
+          <input type="text" placeholder="Search" value={search} onChange={(e)=> handleSearch(e) }/>
         </div>
       </div>
 

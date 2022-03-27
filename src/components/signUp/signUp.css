@@ -1,0 +1,103 @@
+.logo{
+    width:100%;
+}
+.sign__logo {
+    height: 28px;
+    object-fit:contain;
+    margin:30px 50px;
+    display: block;
+}
+
+.sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+}
+
+.sign__info {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    text-transform: capitalize;
+    width:fit-content;
+    border-radius: 10px;
+    padding:30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sign__text {
+    line-height:1.5;
+}
+
+.sign__text > h1 {
+    font-size: 2.5rem;
+}
+
+.sign__info > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign__info > form * {
+    margin-top: 20px;
+}
+
+.sign__info > form > input , button {
+    height:50px;
+    width:300px;
+    outline: none;
+}
+
+.sign__info > form > input{
+    font-size: 1rem;
+    padding-left:5px;
+}
+
+
+.sign__info > form > input:hover {
+    border: 2px solid #0A66C2;
+}
+
+
+.sign__info > form > a,
+.sign__up >a 
+ {
+    color: #0A66C2;
+    text-decoration: none;
+    font-weight:  bold;
+    cursor: pointer;
+    width:fit-content;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.sign__info > form > a:hover{
+    background-color: #D0E8FF;
+}
+
+.sign__info > form > button {
+    border-radius: 50px;
+    border: none;
+    background-color: #0A66C2;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.sign__info > form > button:hover {
+    background-color: #004182 ;
+}
+
+.sign__up{
+    margin-top:20px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items:center;
+}
+
+
+

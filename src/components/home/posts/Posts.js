@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import myImage from '../../../utils/my-img.jpg'
 import ImageIcon from '@mui/icons-material/Image';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
@@ -7,15 +7,33 @@ import FeedIcon from '@mui/icons-material/Feed';
 import PostOption from './PostOption';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SinglePost from './SinglePost';
+import collectionRef from '../../../firebase'
+import { 
+    addDoc 
+} from 'firebase/firestore'
+ 
+
 
 function Posts() {
+
+    const [ post , setPost ] = useState('')
+
+    function handlePost (e){
+        setPost(e.target.value)
+    }
+
+    function savaPost (){
+        
+    }
+
+
   return (
     <div className="posts">
         <div className="post__input">
             <div className="upper__postInput">
                 <img src={myImage} alt="" />
-                <form action="">
-                    <input type="text" value='Start a post' />
+                <form>
+                    <input type="text" placeholder="Start a post" value={post} onChange={(e) => handlePost(e)}/>
                     <button>post</button>
                 </form>
             </div>
